@@ -1,0 +1,140 @@
+@import "tailwindcss";
+@import "@material-symbols/font-400/outlined.css";
+
+@theme inline {
+  /* Typography */
+  --font-headline: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-body: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-label: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Border radius (design system) */
+  --radius-DEFAULT: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Primary (ArqTech PRO brand — dashboard spec) */
+  --color-primary: #005f61;
+  --color-primary-container: #0a7a7d;
+  --color-primary-fixed: #9ff0fb;
+  --color-primary-fixed-dim: #82d3de;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #9becf7;
+  --color-on-primary-fixed: #001f23;
+  --color-on-primary-fixed-variant: #004f56;
+  --color-inverse-primary: #82d3de;
+  --color-surface-tint: #006972;
+
+  /* Secondary */
+  --color-secondary: #8c4e35;
+  --color-secondary-container: #ffad8f;
+  --color-secondary-fixed: #ffdbce;
+  --color-secondary-fixed-dim: #ffb59a;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #793f27;
+  --color-on-secondary-fixed: #380d00;
+  --color-on-secondary-fixed-variant: #6f3720;
+
+  /* Tertiary */
+  --color-tertiary: #713d10;
+  --color-tertiary-container: #8e5426;
+  --color-tertiary-fixed: #ffdcc5;
+  --color-tertiary-fixed-dim: #ffb783;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #ffd7bd;
+  --color-on-tertiary-fixed: #301400;
+  --color-on-tertiary-fixed-variant: #6d390c;
+
+  /* Surfaces */
+  --color-background: #fbf8ff;
+  --color-surface: #fbf8ff;
+  --color-surface-bright: #fbf8ff;
+  --color-surface-dim: #d7d8f4;
+  --color-surface-variant: #e0e0fc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f2ff;
+  --color-surface-container: #edecff;
+  --color-surface-container-high: #e6e6ff;
+  --color-surface-container-highest: #e0e0fc;
+  --color-inverse-surface: #2d2f44;
+  --color-inverse-on-surface: #f1efff;
+
+  /* Text */
+  --color-on-surface: #181a2e;
+  --color-on-surface-variant: #3e494a;
+  --color-on-background: #181a2e;
+
+  /* Borders */
+  --color-outline: #6f797a;
+  --color-outline-variant: #bec8ca;
+
+  /* Error */
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+}
+
+:root {
+  --background: #fbf8ff;
+  --foreground: #181a2e;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-headline {
+  font-family: var(--font-headline);
+}
+
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined.filled {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bec8ca;
+  border-radius: 10px;
+}
+
+.dot-grid-bg {
+  background-color: #fbf8ff;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 95, 97, 0.04) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}

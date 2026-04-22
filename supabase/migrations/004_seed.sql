@@ -1,0 +1,4 @@
+-- Seed apenas desenvolvimento — executar manualmente se necessário após criar usuário de teste no Auth
+-- Exemplo (substituir user_id):
+-- insert into public.workspaces (name, slug, plan) values ('Escritório Demo', 'escritorio-demo', 'trial');
+-- insert into public.workspace_members (workspace_id, user_id, role) values (...);
